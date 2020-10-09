@@ -1,0 +1,4 @@
+{"columns":["Average Months in File", "Months Since Last Delinquency", "Bills Paid on Time(%)", "Unpaid Balance(%)", "Trades w/ Balance"],
+"order": [2,3,1,0,4],
+"target_names":["Accept", "Decline"]
+}

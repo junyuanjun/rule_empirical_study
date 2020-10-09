@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Rule List</title>
+
+    <style>
+	     text{
+          font-family: sans-serif;
+          fill: "Black";
+       }
+
+       .legend text {
+          font: 14px sans-serif;
+        }
+
+        rect {
+          stroke-width: .5;
+        }
+
+        .curlyBrace {
+          fill: none;
+          stroke: #D3D3D3;
+        }
+
+        /*#view {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+
+        #svg1 {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+
+        #legend1 {
+          position: absolute;
+          top: 50;
+          left: 1000;
+        }*/
+
+    </style>
+
+  </head>
+
+  <body>
+    <div id="view" style="display: flex; flex-direction: row;">
+        <svg id="svg1"></svg>   
+        <svg id="legend1"></svg>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+        <svg id="svg2"></svg>   
+        <svg id="legend2"></svg>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+        <svg id="svg3"></svg>   
+    </div>
+
+    <canvas id="canvas"></canvas>
+	<!-- load the d3.js library -->	
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="https://d3js.org/d3-queue.v3.min.js"></script>
+  <script src="./legend.js"></script>	
+	<script src="./list.js"></script>
+  </body>
+</html>
