@@ -29,7 +29,29 @@ We generate rules based on PIMA Indian Diabetes dataset[3] for our actual test. 
 | non-diabetic                  | Low Risk             |
 | diabetic                      | High Risk            |
 
+## Test Questions
 
+To simulate the process of humans understanding rules, we desinged the following two tasks. Task 1 (Prediction Estimation) simulates the cases  where we only know the feature values and want to estimate the outcome. Task 2 (Prediction Characterization) simulates the cases given an outcome, we need to summarize/characterize how the model makes such prediction.
+
+#### Task 1: Prediction Estimation
+
+1. (not used for analysis) What is the most common prediction for rules containing conditions that match a person’s diet with <u>a High value of *Potassium*</u>?
+2. What is the most common prediction for rules containing conditions that match a person’s diet with <u>a Low value of *Vitamin A*</u>?
+3. What is the most common prediction for rules containing conditions that match a person’s diet with <u>a Medium value of *Vitamin A*</u>?
+4. What is the most common prediction for rules containing conditions that match a person’s diet with <u>a High value of *Magnesium*</u>  <b>and</b> <u>a High value of *Vitamin A*</u> ?
+5. What is the most common prediction for rules containing conditions that match a person’s diet
+           with <u>a Low value of *Copper*</u>  <b>and</b> <u>a Medium value of *Magnesium*</u>?
+6.  What is the most common prediction for rules containing conditions that match a person’s diet
+       with <u>a Medium value of *Magnesium*</u>  <b>and</b> <u>a Medium value of *Calcium*</u>?
+
+### Task 2: Prediction Characterization
+
+1. (not used for analysis) Considering only the rules that predict <b> High Risk</b>, what is the most common value for <u>Potassium</u>?
+2. Considering only the rules that predict <b>Low Risk</b>, what is the most common value for <u>Vitamin A</u>?
+3. Considering only the rules that predict <b>Low Risk</b>, what is the most common value for <u>Zinc</u>?
+4. Considering only the rules that predict **High Risk**, what is the most common value combination for <u>Magnesium</u> and <u>Potassium</u> ?
+5. Considering only the rules that predict **High Risk**, what is the most common value combination for <u>Copper</u> and <u>Calcium</u>?
+6. Considering only the rules that predict **Low Risk**, what is the most common value combination for <u>Copper</u> and <u>Calcium</u>?
 
 ## Study Analysis
 
